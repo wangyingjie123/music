@@ -193,6 +193,7 @@ $(function(){
         $('.volume-dot').css('left',$('.volume-wrap').width()*audio.volume);
     });
     //播放进度条按下拖动
+    $('body').on('mousedown',false);
     $('.player-dot').on('mousedown',function(e){
        var cx=e.clientX;
         var lenx=cx-$(this).get(0).offsetLeft;
